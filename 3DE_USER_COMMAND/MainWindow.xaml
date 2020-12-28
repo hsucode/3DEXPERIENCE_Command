@@ -42,7 +42,7 @@
             <Grid Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center"  >
 
                 <TextBlock  Background="Transparent" FontWeight="Medium" Margin="0" Foreground ="White">
-                    3D EXPERIENCE PLATFORM COMMAND
+                    3DEXPERIENCE PLATFORM COMMAND
                 </TextBlock>
             </Grid>
 
