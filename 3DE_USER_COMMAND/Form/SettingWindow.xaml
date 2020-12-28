@@ -1,0 +1,72 @@
+﻿<Window x:Class="_3DE_USER_COMMAND.Form.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3DE_USER_COMMAND.Form"
+        mc:Ignorable="d"
+        Title="SettingWindow" Height="190" Width="400" WindowStyle="None" AllowsTransparency="True" Background="White" >
+
+    <Grid Margin=" 0">
+        <!-- 定义横向分割，为标题栏-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />         
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="SettingsWindow" Grid.Row ="0" Background="#FF005686" MouseMove="SettingWindow_MouseMove">
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25" />
+                    <ColumnDefinition Width="*" />
+                    <!--<ColumnDefinition Width="26" />-->
+                    <ColumnDefinition Width="26" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <!--标题-->
+                <Grid Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center"  >
+                    <TextBlock  Background="Transparent" FontWeight="Medium" Margin="0" Foreground ="White">
+                    Setting
+                    </TextBlock>
+                </Grid>
+                <!---关闭-->
+                <Grid Grid.Column="2" >
+                    <Button x:Name="CloseSettingWindow" Margin="3" Style="{StaticResource Button_close}" Click="CloseSettingWindow_Click" />
+                </Grid>
+                              
+            </Grid>
+                 
+        </Grid>
+        <Grid Grid.Row="1">
+            <TextBlock Margin=" 0" TextWrapping="Wrap" Text="Version: v1.1" Width="366">
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBlock Margin=" 0" TextWrapping="Wrap" Text="Feedback: xusong.work@outlook.com" Width="366">                  
+                </TextBlock>          
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock Margin=" 0" TextWrapping="Wrap"  Width="366">         
+                输入命令，选择命令，按回车或者鼠标右击命令行与菜单栏中间的空白区域。
+            </TextBlock>
+  
+        </Grid>
+        <Grid Grid.Row="4">
+            <TextBlock Margin=" 0" TextWrapping="Wrap"  Width="366">         
+                输入ds是完整命令列表。
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="5">
+            <TextBlock Margin=" 0" TextWrapping="Wrap"  Width="366">         
+                在使用过程中需要切换模块，受到许可和模块的限制，有些命令您可能调不出来。
+            </TextBlock>
+        </Grid>
+
+    </Grid>
+       
+</Window>
