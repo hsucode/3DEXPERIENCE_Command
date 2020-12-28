@@ -47,7 +47,7 @@
             </TextBlock>
         </Grid>
         <Grid Grid.Row="2">
-            <TextBlock Margin=" 0" TextWrapping="Wrap" Text="Feedback: song.hsu@outlook.com" Width="366">                  
+            <TextBlock Margin=" 0" TextWrapping="Wrap" Text="Feedback: xxx@outlook.com" Width="366">                  
                 </TextBlock>          
         </Grid>
         <Grid Grid.Row="3">
